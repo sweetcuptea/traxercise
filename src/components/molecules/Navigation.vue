@@ -8,8 +8,9 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/" exact>
+        <router-link to="/history" exact>
           <tx-calendar-time-icon />
+          <span :class="{ active: isActive('/exercise-history') }"></span>
         </router-link>
       </li>
       <li>

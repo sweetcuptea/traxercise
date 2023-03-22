@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../components/organisms/Home.vue";
-import AddExercises from "../components/organisms/AddExercises.vue";
-import Chart from "../components/organisms/Chart.vue";
+import AddExercisePage from "../components/organisms/AddExercisePage.vue";
+import DonePage from "../components/organisms/DonePage.vue";
+import HistoryPage from "../components/organisms/HistoryPage.vue";
+import ChartPage from "../components/organisms/ChartPage.vue";
 
 Vue.use(VueRouter);
 
@@ -18,12 +20,22 @@ const router = new VueRouter({
     {
       path: "/add-exercises",
       name: "add-exercises",
-      component: AddExercises,
+      component: AddExercisePage,
+    },
+    {
+      path: "/done",
+      name: "done",
+      component: DonePage,
     },
     {
       path: "/chart",
       name: "chart",
-      component: Chart,
+      component: ChartPage,
+    },
+    {
+      path: "/history",
+      name: "history",
+      component: HistoryPage,
     },
   ],
 });

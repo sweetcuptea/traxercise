@@ -8,6 +8,7 @@
       :masks="masks"
       :model-config="modelConfig"
       title-position="left"
+      :attributes="attributes"
     >
       <template v-slot="{ inputValue, togglePopover }">
         <input

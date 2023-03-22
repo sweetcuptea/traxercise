@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="buttonStyle !== 'secondary' ? 'primary-button' : 'secondary-button'"
+    :class="buttonClass"
     :style="{ width: width == null ? 'auto' : width }"
   >
     <slot></slot>
@@ -14,16 +14,34 @@ export default {
   props: {
     text: String,
     width: String,
-    buttonStyle: String,
+    primary: {
+      type: Boolean,
+      default: true,
+    },
+    secondary: Boolean,
+    tertiary: Boolean,
   },
   data() {
     return {};
+  },
+  computed: {
+    buttonClass() {
+      if (this.secondary) {
+        return "secondary-button";
+      } else if (this.tertiary) {
+        return "tertiary-button";
+      } else {
+        return "primary-button";
+      }
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 button {
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,15 +58,16 @@ button {
   }
 }
 .primary-button {
-  background: linear-gradient(to right, #ff7b54, #ff9576);
+  background: $accent-color-100;
   color: $dark-color-100;
-  border: none;
+  border: 2px solid $accent-color-100;
   border-radius: $radius-100;
 }
 .primary-button:hover,
 .primary-button:active {
   background-color: $accent-color-200;
   border: 2px solid $accent-color-200;
+  box-shadow: $shadow;
   svg {
     color: $dark-color-100;
   }
@@ -62,6 +81,7 @@ button {
   background-color: transparent;
   border: 2px solid $dark-color-300;
   border-radius: $radius-100;
+  box-shadow: $shadow;
   svg {
     color: $accent-color-100;
   }
@@ -75,6 +95,28 @@ button {
   }
 }
 .secondary-button:focus {
+  outline: none;
+}
+
+.tertiary-button {
+  color: $light-color-200;
+  background-color: $dark-color-200;
+  border: 2px solid $dark-color-200;
+  border-radius: $radius-100;
+  box-shadow: $shadow;
+  svg {
+    color: $accent-color-100;
+  }
+}
+.tertiary-button:hover,
+.tertiary-button:active {
+  background-color: $dark-color-300;
+  border: 2px solid $dark-color-300;
+  svg {
+    color: $accent-color-200;
+  }
+}
+.tertiary-button:focus {
   outline: none;
 }
 </style>

@@ -19,9 +19,9 @@
 
       <div class="action">
         <router-link to="/" exact>
-          <tx-button text="Cencel" width="100%" buttonStyle="secondary" />
+          <tx-button text="Cencel" width="100%" secondary />
         </router-link>
-        <router-link to="">
+        <router-link to="/done">
           <tx-button text="Save" width="100%" />
         </router-link>
       </div>
@@ -56,7 +56,7 @@ export default {
   margin-bottom: 40%;
 
   h5 {
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: $spacing-700;
     text-align: left;
   }
