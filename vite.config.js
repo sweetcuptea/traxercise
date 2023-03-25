@@ -17,9 +17,7 @@ export default defineConfig({
       targets: ["ie >= 11"],
       additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
     }),
-    fonts({
-      dirs: ["./src/assets/fonts"],
-    }),
+    fonts({}),
   ],
   resolve: {
     alias: {
@@ -29,11 +27,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `
-          @import "./src/assets/scss/fonts.scss";
-          @import "./src/assets/scss/variable.scss";
-          @import "./src/assets/scss/reset.scss";
-        `,
+        additionalData: ``,
       },
     },
   },
