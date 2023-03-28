@@ -17,7 +17,9 @@ export default defineConfig({
       targets: ["ie >= 11"],
       additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
     }),
-    fonts({}),
+    fonts({
+      dirs: ["./src/assets/fonts"],
+    }),
   ],
   resolve: {
     alias: {
