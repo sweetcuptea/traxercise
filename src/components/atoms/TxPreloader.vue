@@ -1,15 +1,14 @@
-t
 <template>
-  <div class="progress-bar-container">
-    <div class="progress-bar">
-      <div class="loader" :style="{ width: progress + '%' }"></div>
+  <div class="preloader-container">
+    <div class="preloader-bar">
+      <div class="preloader-fill" :style="{ width: progress + '%' }"></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Preloader",
+  name: "TxPreloader",
   data() {
     return {};
   },
@@ -23,20 +22,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.progress-bar-container {
+.preloader-container {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .progress-bar {
+  .preloader-bar {
     width: 30vw;
     height: 8px;
     background-color: $dark-color-300;
     border-radius: $radius-100;
 
-    .loader {
+    .preloader-fill {
       height: 8px;
       background-color: $accent-color-100;
       border-radius: $radius-100;

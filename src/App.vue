@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <tx-preloader v-if="preload" :progress="progress" />
+    <TxPreloader v-if="isLoading" :progress="progress" />
 
-    <main v-else>
+    <main class="main" v-else>
       <h1>hello world</h1>
     </main>
   </div>
 </template>
 
 <script>
-import Preloader from "./assets/components/atoms/Preloader.vue";
+import TxPreloader from "./components/atoms/TxPreloader.vue";
 
 export default {
   components: {
-    "tx-preloader": Preloader,
+    TxPreloader,
   },
   data() {
     return {
-      preload: true,
+      isLoading: true,
       progress: 0,
     };
   },
@@ -27,7 +27,7 @@ export default {
         this.progress++;
       } else {
         clearInterval(preloadInterval);
-        this.preload = false;
+        this.isLoading = false;
       }
     }, 10);
   },
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
+.main {
   margin: $spacing-800 $spacing-400 0;
 }
 </style>
