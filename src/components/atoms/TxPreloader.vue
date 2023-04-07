@@ -1,7 +1,7 @@
 <template>
-  <div class="preloader-container">
-    <div class="preloader-bar">
-      <div class="preloader-fill" :style="{ width: progress + '%' }"></div>
+  <div class="preloader">
+    <div class="preloader__bar">
+      <div class="preloader__fill" :style="{ width: progress + '%' }"></div>
     </div>
   </div>
 </template>
@@ -22,24 +22,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.preloader-container {
+.preloader {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .preloader-bar {
+  &__bar {
     width: 30vw;
     height: 8px;
     background-color: $dark-color-300;
     border-radius: $radius-100;
+  }
 
-    .preloader-fill {
-      height: 8px;
-      background-color: $accent-color-100;
-      border-radius: $radius-100;
-    }
+  &__fill {
+    height: 8px;
+    background-color: $accent-color-100;
+    border-radius: $radius-100;
   }
 }
 </style>

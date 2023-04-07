@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <TxPreloader v-if="isLoading" :progress="progress" />
+    <tx-preloader v-if="isLoading" :progress="progress" />
 
     <main class="main" v-else>
-      <h1>hello world</h1>
+      <router-view />
     </main>
   </div>
 </template>
