@@ -2,7 +2,7 @@
   <section class="homepage">
     <h5 class="homepage__title">Traxercise</h5>
     <div class="homepage__empty-list">
-      <tx-barble-off class="homepage__icon" />
+      <barble-off class="homepage__icon" />
       <p class="homepage__description">you have no exercise</p>
     </div>
   </section>
