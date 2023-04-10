@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "BarbleOff",
+  name: "VBarbleOff",
 };
 </script>
 
