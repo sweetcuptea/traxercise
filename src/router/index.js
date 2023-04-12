@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import TxHomepage from "../components/organisms/TxHomepage.vue";
+import VHomepage from "../components/organisms/VHomepage.vue";
 
 Vue.use(VueRouter);
 
@@ -10,7 +10,7 @@ const router = new VueRouter({
     {
       path: "/",
       name: "homepage",
-      component: TxHomepage,
+      component: VHomepage,
     },
   ],
 });

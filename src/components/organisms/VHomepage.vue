@@ -2,19 +2,19 @@
   <section class="homepage">
     <h5 class="homepage__title">Traxercise</h5>
     <div class="homepage__empty-list">
-      <tx-barble-icon class="homepage__icon" />
+      <v-barble-off class="homepage__icon" />
       <p class="homepage__description">you have no exercise</p>
     </div>
   </section>
 </template>
 
 <script>
-import TxBarbleIcon from "../atoms/TxBarbleIcon.vue";
+import VBarbleOff from "../atoms/VBarbleOff.vue";
 
 export default {
-  name: "TxHomepage",
+  name: "VHomepage",
   components: {
-    TxBarbleIcon,
+    VBarbleOff,
   },
 };
 </script>

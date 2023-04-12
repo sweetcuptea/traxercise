@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tx-preloader v-if="isLoading" :progress="progress" />
+    <v-preloader v-if="isLoading" :progress="progress" />
 
     <main class="main" v-else>
       <router-view />
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import TxPreloader from "./components/atoms/TxPreloader.vue";
+import VPreloader from "./components/atoms/VPreloader.vue";
 
 export default {
   components: {
-    TxPreloader,
+    VPreloader,
   },
   data() {
     return {

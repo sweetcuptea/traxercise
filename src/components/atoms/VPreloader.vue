@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "TxPreloader",
+  name: "VPreloader",
   data() {
     return {};
   },
