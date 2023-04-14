@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import VBarbleOff from "../atoms/VBarbleOff.vue";
+import { VBarbleOff } from "../atoms/IconComponents";
 
 export default {
   name: "VHomepage",
