@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { VBarbleOff } from "../atoms/IconComponents/Icon";
+import { VBarbleOff } from "../atoms/IconComponents";
 
 export default {
   name: "VHomepage",
