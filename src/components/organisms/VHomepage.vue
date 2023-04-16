@@ -5,16 +5,19 @@
       <v-barble-off class="homepage__icon" />
       <p class="homepage__description">you have no exercise</p>
     </div>
+    <v-navigation />
   </section>
 </template>
 
 <script>
 import { VBarbleOff } from "../atoms/IconComponents";
+import VNavigation from "../molecules/VNavigation.vue";
 
 export default {
   name: "VHomepage",
   components: {
     VBarbleOff,
+    VNavigation,
   },
 };
 </script>
