@@ -3,19 +3,19 @@
     <ul class="nav__ul">
       <li>
         <router-link to="/" exact>
-          <v-smart-home class="nav__icon" />
+          <v-smart-home-icon class="nav__icon" />
           <span :class="isActive('/')"></span>
         </router-link>
       </li>
       <li>
         <router-link to="" exact>
-          <v-calendar-time class="nav__icon" />
+          <v-calendar-time-icon class="nav__icon" />
           <span :class="isActive('')"></span>
         </router-link>
       </li>
       <li>
         <router-link to="" exact>
-          <v-chart-area-line class="nav__icon" />
+          <v-chart-area-line-icon class="nav__icon" />
           <span :class="isActive('')"></span>
         </router-link>
       </li>
@@ -25,17 +25,17 @@
 
 <script>
 import {
-  VSmartHome,
-  VCalendarTime,
-  VChartAreaLine,
+  VSmartHomeIcon,
+  VCalendarTimeIcon,
+  VChartAreaLineIcon,
 } from "../atoms/IconComponents";
 
 export default {
   name: "VNavigation",
   components: {
-    VSmartHome,
-    VCalendarTime,
-    VChartAreaLine,
+    VSmartHomeIcon,
+    VCalendarTimeIcon,
+    VChartAreaLineIcon,
   },
   data() {
     return {};
@@ -43,7 +43,7 @@ export default {
   computed: {
     isActive() {
       return (routePath) => {
-        return this.$route.path === routePath ? "nav__active" : "";
+        return this.$route.path === routePath ? "nav__li--is-active" : "";
       };
     },
   },
@@ -77,7 +77,7 @@ export default {
     color: $accent-color-100;
   }
 
-  &__active {
+  &__li--is-active {
     width: 80%;
     height: 2.5px;
     margin: 0 auto;

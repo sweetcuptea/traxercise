@@ -2,7 +2,7 @@
   <section class="homepage">
     <h5 class="homepage__title">Traxercise</h5>
     <div class="homepage__empty-list">
-      <v-barble-off class="homepage__icon" />
+      <v-barble-off-icon class="homepage__icon" />
       <p class="homepage__description">you have no exercise</p>
     </div>
     <v-navigation />
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import { VBarbleOff } from "../atoms/IconComponents";
+import { VBarbleOffIcon } from "../atoms/IconComponents";
 import VNavigation from "../molecules/VNavigation.vue";
 
 export default {
   name: "VHomepage",
   components: {
-    VBarbleOff,
+    VBarbleOffIcon,
     VNavigation,
   },
 };

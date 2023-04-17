@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "VBarbleOff",
+  name: "VBarbleOffIcon",
 };
 </script>
 

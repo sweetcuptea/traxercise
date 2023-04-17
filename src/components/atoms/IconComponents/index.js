@@ -1,4 +1,4 @@
-export { default as VBarbleOff } from "./VbarBleOff.vue";
-export { default as VCalendarTime } from "./VCalendarTime.vue";
-export { default as VChartAreaLine } from "./VChartAreaLine.vue";
-export { default as VSmartHome } from "./VSmartHome.vue";
+export { default as VBarbleOffIcon } from "./VBarbleOffIcon.vue";
+export { default as VCalendarTimeIcon } from "./VCalendarTimeIcon.vue";
+export { default as VChartAreaLineIcon } from "./VChartAreaLineIcon.vue";
+export { default as VSmartHomeIcon } from "./VSmartHomeIcon.vue";
