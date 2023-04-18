@@ -1,22 +1,12 @@
 <template>
   <nav class="nav">
     <ul class="nav__ul">
-      <li>
-        <router-link to="/" exact>
-          <v-smart-home-icon class="nav__icon" />
-          <span :class="isActive('/')"></span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="" exact>
-          <v-calendar-time-icon class="nav__icon" />
-          <span :class="isActive('')"></span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="" exact>
-          <v-chart-area-line-icon class="nav__icon" />
-          <span :class="isActive('')"></span>
+      <li v-for="menu in menus" class="nav__li" :key="menu.id">
+        <router-link :to="menu.pathUrl" exact>
+          <component :is="menu.iconComponent" class="nav__icon" />
+          <div
+            :class="{ 'nav__li--is-active': $route.path === menu.pathUrl }"
+          ></div>
         </router-link>
       </li>
     </ul>
@@ -41,10 +31,21 @@ export default {
     return {};
   },
   computed: {
-    isActive() {
-      return (routePath) => {
-        return this.$route.path === routePath ? "nav__li--is-active" : "";
-      };
+    menus() {
+      return [
+        {
+          pathUrl: "/",
+          iconComponent: "v-smart-home-icon",
+        },
+        {
+          pathUrl: "",
+          iconComponent: "v-calendar-time-icon",
+        },
+        {
+          pathUrl: "",
+          iconComponent: "v-chart-area-line-icon",
+        },
+      ];
     },
   },
 };
