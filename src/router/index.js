@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import VHomepage from "../components/organisms/VHomepage.vue";
+import VHomepage from "../components/pages/VHomepage.vue";
 
 Vue.use(VueRouter);
 
