@@ -5,6 +5,7 @@
       <v-barble-off-icon class="homepage__icon" />
       <p class="homepage__description">you have no exercise</p>
     </div>
+    <v-create-exercise-button />
     <v-navigation />
   </section>
 </template>
@@ -12,12 +13,14 @@
 <script>
 import { VBarbleOffIcon } from "../atoms/IconComponents";
 import VNavigation from "../molecules/VNavigation.vue";
+import VCreateExerciseButton from "../atoms/VCreateExerciseButton.vue";
 
 export default {
   name: "VHomepage",
   components: {
     VBarbleOffIcon,
     VNavigation,
+    VCreateExerciseButton,
   },
 };
 </script>
