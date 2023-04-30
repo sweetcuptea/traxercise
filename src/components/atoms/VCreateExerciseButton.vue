@@ -37,6 +37,11 @@ export default {
     background-color: $accent-color-100;
     border-radius: 100%;
     cursor: pointer;
+    
+   &:hover,
+   &:active {
+     background-color: $accent-color-200;
+   }
   }
 
   &__icon:hover,
