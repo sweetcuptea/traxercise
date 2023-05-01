@@ -37,11 +37,11 @@ export default {
     background-color: $accent-color-100;
     border-radius: 100%;
     cursor: pointer;
-  }
 
-  &__icon:hover,
-  &__icon:active {
-    background-color: $accent-color-200;
+    &:hover,
+    &:active {
+      background-color: $accent-color-200;
+    }
   }
 }
 </style>
