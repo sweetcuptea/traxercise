@@ -1,5 +1,5 @@
 <template>
-  <router-link to="" exact>
+  <router-link :to="pathUrl" exact>
     <button class="btn-create-exercise">
       <v-plus-icon class="btn-create-exercise__icon" />
     </button>
@@ -13,6 +13,12 @@ export default {
   name: "VCreateExerciseButton",
   components: {
     VPlusIcon,
+  },
+  props: {
+    pathUrl: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
