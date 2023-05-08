@@ -15,17 +15,17 @@
 
 <script>
 import {
-  VSmartHomeIcon,
-  VCalendarTimeIcon,
-  VChartAreaLineIcon,
+  VIconSmartHome,
+  VIconCalendarTime,
+  VIconChartAreaLine,
 } from "../atoms/IconComponents";
 
 export default {
   name: "VNavigation",
   components: {
-    VSmartHomeIcon,
-    VCalendarTimeIcon,
-    VChartAreaLineIcon,
+    VIconSmartHome,
+    VIconCalendarTime,
+    VIconChartAreaLine,
   },
   data() {
     return {};
@@ -35,15 +35,15 @@ export default {
       return [
         {
           pathUrl: "/",
-          iconComponent: "v-smart-home-icon",
+          iconComponent: "v-icon-smart-home",
         },
         {
           pathUrl: "",
-          iconComponent: "v-calendar-time-icon",
+          iconComponent: "v-icon-calendar-time",
         },
         {
           pathUrl: "",
-          iconComponent: "v-chart-area-line-icon",
+          iconComponent: "v-icon-chart-area-line",
         },
       ];
     },

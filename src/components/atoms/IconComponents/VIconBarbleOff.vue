@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "VBarbleOffIcon",
+  name: "VIconBarbleOff",
 };
 </script>
 
