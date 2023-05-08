@@ -1,24 +1,24 @@
 <template>
   <router-link to="" exact>
-    <button class="btn-create-exercise">
-      <v-plus-icon class="btn-create-exercise__icon" />
+    <button class="button-create-exercise">
+      <v-icon-plus class="button-create-exercise__icon" />
     </button>
   </router-link>
 </template>
 
 <script>
-import { VPlusIcon } from "./IconComponents";
+import { VIconPlus } from "./IconComponents";
 
 export default {
   name: "VCreateExerciseButton",
   components: {
-    VPlusIcon,
+    VIconPlus,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.btn-create-exercise {
+.button-create-exercise {
   width: auto;
   height: auto;
   position: fixed;
