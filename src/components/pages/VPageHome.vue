@@ -1,9 +1,9 @@
 <template>
   <section class="page-home">
-    <h5 class="pagehome__title">Traxercise</h5>
-    <div class="pagehome-list">
-      <v-icon-barble-off class="pagehome__icon" />
-      <p class="pagehome__description">you have no exercise</p>
+    <h5 class="page-home__title">Traxercise</h5>
+    <div class="page-home__empty-list">
+      <v-icon-barble-off class="page-home__icon" />
+      <p class="page-home__description">you have no exercise</p>
     </div>
     <v-button-create-exercise />
     <v-navigation />
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.pagehome {
+.page-home {
   height: auto;
 
   &__title {
