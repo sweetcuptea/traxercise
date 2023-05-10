@@ -1,6 +1,6 @@
 # traxsercise
 
-a simple gym trackerapp built with vue.js
+a simple gym trackerapp built with vue.js!
 
 ## Project Setup
 
