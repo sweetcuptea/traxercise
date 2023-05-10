@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.create-exercise {
+.page-create-exercise {
   width: 100%;
   margin-bottom: 40%;
 }
