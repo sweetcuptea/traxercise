@@ -49,16 +49,9 @@ lerna-debug.log*
 
 # Yarn
 .yarn/*
-!.yarn/.pnp.*
 !.yarn/cache
-!.yarn/unplugged
-!.yarn/build-state.yml
-!.yarn/install-state.gz
+!.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.pnp.*
-.yarnrc
-yarn.lock
-yarn-error.log
