@@ -10,7 +10,7 @@ import fonts from "vite-plugin-fonts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/traxercise/",
+  base: "/",
   plugins: [
     vue2(),
     vue2Jsx(),
