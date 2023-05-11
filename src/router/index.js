@@ -9,7 +9,7 @@ const router = new VueRouter({
   mode: "history",
   routes: [
     {
-      path: "/",
+      path: "/traxercise",
       name: "homepage",
       component: VPageHome,
     },
