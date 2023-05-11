@@ -46,3 +46,19 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Yarn
+.yarn/*
+!.yarn/.pnp.*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/build-state.yml
+!.yarn/install-state.gz
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+.yarnrc
+yarn.lock
+yarn-error.log
