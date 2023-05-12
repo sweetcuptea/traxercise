@@ -34,7 +34,7 @@ export default {
     menus() {
       return [
         {
-          pathUrl: "/",
+          pathUrl: "/traxercise",
           iconComponent: "v-icon-smart-home",
         },
         {
