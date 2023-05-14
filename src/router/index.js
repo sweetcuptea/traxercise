@@ -14,7 +14,7 @@ const router = new VueRouter({
       component: VPageHome,
     },
     {
-      path: "/create-exercise",
+      path: "/traxercise/create-exercise",
       name: "create-exercise",
       component: VPageCreateExercise,
     },

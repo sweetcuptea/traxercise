@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/create-exercise" exact>
+  <router-link to="/traxercise/create-exercise" exact>
     <button class="button-create-exercise">
       <v-icon-plus class="button-create-exercise__icon" />
     </button>
